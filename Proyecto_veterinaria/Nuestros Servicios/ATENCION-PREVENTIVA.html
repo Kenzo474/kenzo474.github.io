@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATENCION PREVENTIVA</title>
+    <link rel="stylesheet" href="styles-enhanced.css">
+</head>
+<body>
+<header style="display: flex; align-items: center; padding: 20px;">
+
+
+        <img src="imagenes_veterinaria/LOGOS/LOGO.jpg" alt="Logo" class="logo header-logo" style="margin-right: 20px; margin-bottom: 10px;" onclick="toggleDropdown(); document.getElementsByClassName('dropdown-content')[0].style.display = 'block';">
+
+        <div style="text-align: center; flex-grow: 1; display: flex; flex-direction: column; align-items: center;">
+
+<div style="text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 20px;">
+
+<h1 style="font-size: 32px; margin-bottom: 10px;">HAIRY PAWS</h1>
+
+<p style="margin: 10px 0; font-style: italic;">Cuidamos a tus amigos peludos como si fueran de la familia</p>
+
+            </div>
+            <nav style="position: relative; margin-top: 10px;">
+
+                <div class="dropdown" style="margin-left: 20px;">
+                    <div class="dropdown-content" style="display: none; opacity: 0; transition: opacity 0.5s;">
+
+                        <a href="#vacunaciones" onclick="toggleDropdown()">Vacunaciones</a>
+                        <a href="#esterilizacion" onclick="toggleDropdown()">Esterilización y Castración</a>
+                        <a href="#nutricion" onclick="toggleDropdown()">Nutrición y Asesoramiento</a>
+                        <a href="#cuidadoDental" onclick="toggleDropdown()">Cuidado Dental</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="section-containerdisplay: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;" style="display: flex; flex-wrap: wrap;">
+        <section id="vacunaciones" style="flex: 1; min-width: 300px; margin: 10px;">
+            <h2>Vacunaciones</h2>
+            <p>En HAIRY PAWS, entendemos que la prevención es clave para mantener a tus mascotas saludables y felices. Ofrecemos un programa integral de vacunaciones diseñado para proteger a tus amigos peludos de enfermedades comunes y potencialmente mortales. Nuestras vacunas están actualizadas y son administradas por veterinarios calificados que se asegurarán de que tu mascota reciba la atención adecuada. Realizamos un seguimiento de los calendarios de vacunación y te recordamos cuándo es el momento de las próximas dosis, garantizando así que tu mascota esté siempre protegida. La salud de tu mascota es nuestra prioridad, y con nuestras vacunaciones, puedes estar seguro de que estás tomando la mejor decisión para su bienestar.
+            <img src="imagenes_veterinaria/NUESTROS SERVICIOS/Atencion preventiva/VACUNACION.jpg" alt="Vacunaciones" class="service-image" onclick="showDescription('Vacunaciones', 'Descripción sobre vacunaciones.')">
+        </section>
+        <section id="esterilizacion" style="flex: 1; min-width: 300px; margin: 10px;">
+            <h2>Esterilización y Castración</h2>
+            <p>La esterilización y castración son procedimientos importantes que no solo ayudan a controlar la población de mascotas, sino que también contribuyen a la salud y el bienestar de tus animales. En HAIRY PAWS, ofrecemos servicios de esterilización y castración realizados por veterinarios experimentados en un entorno seguro y cómodo. Estos procedimientos pueden prevenir problemas de salud a largo plazo, como infecciones y ciertos tipos de cáncer, además de reducir comportamientos no deseados. Nuestro equipo te proporcionará toda la información necesaria sobre el proceso, el cuidado postoperatorio y los beneficios a largo plazo de la esterilización y castración, asegurando que tomes la mejor decisión para tu mascota.
+            <img src="imagenes_veterinaria/NUESTROS SERVICIOS/Atencion preventiva/ESTERILIZACION.jpg" alt="Esterilización y Castración" class="service-image" onclick="showDescription('Esterilización y Castración', 'Descripción sobre esterilización y castración.')">
+        </section>
+        <section id="nutricion" style="flex: 1; min-width: 300px; margin: 10px;">
+            <h2>Nutrición y Asesoramiento</h2>
+            <p>La nutrición adecuada es fundamental para la salud y el bienestar de tus mascotas. En HAIRY PAWS, ofrecemos asesoramiento personalizado sobre la alimentación de tus amigos peludos, teniendo en cuenta su edad, raza, tamaño y necesidades específicas. Nuestro equipo de veterinarios y nutricionistas está aquí para ayudarte a elegir la dieta adecuada, ya sea que necesiten un alimento específico para una condición médica o simplemente un plan de alimentación equilibrado. También proporcionamos información sobre la importancia de la hidratación y el control del peso, asegurando que tu mascota tenga una vida larga y saludable. Juntos, podemos crear un plan de nutrición que se adapte a las necesidades únicas de tu mascota.
+            <img src="imagenes_veterinaria/NUESTROS SERVICIOS/Atencion preventiva/nutricion-veterinaria.jpg" alt="Nutrición y Asesoramiento" class="service-image" onclick="showDescription('Nutrición y Asesoramiento', 'Descripción sobre nutrición y asesoramiento.')">
+        </section>
+        <section id="cuidadoDental" style="flex: 1; min-width: 300px; margin: 10px;">
+            <h2>Cuidado Dental</h2>
+            <p>La salud dental es un aspecto a menudo pasado por alto en el cuidado de las mascotas, pero es crucial para su bienestar general. En HAIRY PAWS, ofrecemos servicios de cuidado dental que incluyen limpiezas profesionales, chequeos y asesoramiento sobre el cuidado dental en casa. La acumulación de placa y sarro puede llevar a problemas graves, como enfermedades periodontales y dolor, que afectan la calidad de vida de tu mascota.
+            <p>Nuestro equipo te enseñará cómo cuidar los dientes de tu mascota, desde la elección de los productos adecuados hasta técnicas de cepillado. Con un cuidado dental regular, puedes ayudar a mantener la sonrisa de tu mascota brillante y saludable.</p>
+            <img src="imagenes_veterinaria/NUESTROS SERVICIOS/Atencion preventiva/limpieza_dental_de_los_perros.jpg" alt="Cuidado Dental" class="service-image" onclick="showDescription('Cuidado Dental', 'Descripción sobre cuidado dental.')">
+        </section>
+    </div>
+
+    <footer style="background-image: url('imagenes_veterinaria/BANNER/Banner.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; padding: 10px; min-height: 30px; cursor: pointer;" onclick="scrollToTop()">
+        <div id="descriptionModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); color:white; text-align:center; padding-top:20%;">
+            <span onclick="closeDescription()" style="cursor:pointer; position:absolute; top:10px; right:20px; font-size:30px;">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalText"></p>
+        </div>
+        <img src="imagenes_veterinaria/BANNER/Banner_1.jpg" alt="Banner" style="width: 100%; height: auto;">
+        <script>
+            function toggleDropdown() {
+            }
+
+                if (dropdown.style.display === 'block') {
+                    dropdown.style.opacity = 1;
+                } else {
+                    dropdown.style.opacity = 0;
+                }
+            
+            window.onload = function() {
+                document.querySelector('header').classList.add('fade-in');
+            }
+
+
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.logo')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    for (var i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.style.display === 'block') {
+                            openDropdown.style.display = 'none';
+                        }
+                    }
+                }
+            }
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        </script>
+    </footer>
+</body>
+</html>
